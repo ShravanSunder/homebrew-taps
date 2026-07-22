@@ -6,8 +6,8 @@ class CodexRouter < Formula
   sha256 "e387270843f14aceef696d330adf1902827cdc968c86dd8fe6e0f7318a00b942"
   license any_of: ["MIT", "Apache-2.0"]
 
-  depends_on :macos
   depends_on "rust" => :build
+  depends_on :macos
 
   def install
     system "cargo", "install", *std_cargo_args(path: "crates/codex-router-cli")

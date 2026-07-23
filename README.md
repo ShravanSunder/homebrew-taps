@@ -18,6 +18,8 @@ Install the local account and quota router for Codex CLI:
 brew install shravansunder/taps/codex-router
 ```
 
+The formula installs a prebuilt binary and supports Apple Silicon Macs only.
+
 Some `codex-router` commands launch Codex CLI. Install Codex separately when using those commands:
 
 ```shell

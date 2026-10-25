@@ -1,9 +1,9 @@
 class CodexRouter < Formula
   desc "Local account and quota router for Codex CLI"
   homepage "https://github.com/ShravanSunder/codex-router"
-  # Source commit: 1c722faede1dc0182e72d9a7c09d208fa6e47e6c
-  url "https://github.com/ShravanSunder/codex-router/releases/download/v0.1.101/codex-router-v0.1.101-aarch64-apple-darwin.tar.gz"
-  sha256 "708806c0e7be0f7b9e6e0d3dd198c27f6ab9e03731f1bfa264491a082b6b916e"
+  # Source commit: be7e61e8bca32ebac172eb743e8064d2c7d6ffe7
+  url "https://github.com/ShravanSunder/codex-router/releases/download/v0.1.102/codex-router-v0.1.102-aarch64-apple-darwin.tar.gz"
+  sha256 "54e978fb41bab35653a998ffdc50a9f4c49e83240fe5458565072e575d4c1517"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on arch: :arm64
@@ -13,6 +13,7 @@ class CodexRouter < Formula
     bin.install "codex-router"
     bin.install "agent-collaboration"
     bin.install "agent-sessions"
+    bin.install "codex-router-board-upgrade"
   end
 
   test do

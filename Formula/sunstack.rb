@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.4.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "d71a7f5831504a678b4d114e905caf8b6071cd31910d200d8619e04f308a007e"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.5.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "a7e19978f56e3dabc107c03fa1355b206608908b39fc0b05a65448c16c540445"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.4.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "c6d2e019ce68068387d2356c38638d94c8b7dfabf5a58514f2cf7f3e6f6a5cf1"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.5.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "2cabc753a0d595cdb88769ad56ce37a19a73ed19a448a329a43469dc806b7872"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.4.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "6977d79f4f75621febc3d16956227c05fe8be4a85682e4e1fa6167498e5fd710"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.5.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "47d9d7629d093144df599dbf38a77c486b119b9daf3f159aea165120e2866a1c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.4.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "cf5519431189ddfc128589d0441e872bed990d5777ab7cc601c8a8673f7b40e0"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.5.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "465a07b5444701c2852b727516eb989d56ede6eb2c48f531c6bc58e3b47adc0f"
     end
   end
   license "MIT"

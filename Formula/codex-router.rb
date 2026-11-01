@@ -1,9 +1,9 @@
 class CodexRouter < Formula
   desc "Local account and quota router for Codex CLI"
   homepage "https://github.com/ShravanSunder/codex-router"
-  # Source commit: 7af23abe970a6d2f7d503be452730fb30d7bb0c9
-  url "https://github.com/ShravanSunder/codex-router/releases/download/v0.1.118/codex-router-v0.1.118-aarch64-apple-darwin.tar.gz"
-  sha256 "3bc1fa8ec616322f69d7e8fa7b77a7e72205d821fc29bd34a12f7e0b40c361b2"
+  # Source commit: e7552ae4e2c809b3dae9157f0addbeb68c5b5e71
+  url "https://github.com/ShravanSunder/codex-router/releases/download/v0.1.119/codex-router-v0.1.119-aarch64-apple-darwin.tar.gz"
+  sha256 "564f3deb9c3694da94b91073ae9565b79413c7b8f735a084f5d0c71d8360bda1"
   license any_of: ["MIT", "Apache-2.0"]
 
   depends_on arch: :arm64

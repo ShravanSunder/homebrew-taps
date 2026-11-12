@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.11.0"
+  version "0.11.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "afb69cc00002895b1668d912fcf756c576e36c58d7b1dcbc9e79f43295bdcf0d"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "6b3b99577fa7ebe77bb2f6ed74050d3a5f5d9a271d3ddf3f3d6e283e13b14e9a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "bc31df35b3b033b8f081b29d03660e802c406dcb5165a256bb6e73bc18f562ae"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "ff11eb90931c5cd0e903ea06da305789a9eed2b678678b697b557816d0cb313a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8586ae78ffe2395c66ad63d02595b8dced46195a35155ec901dee96fd534e264"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6b1234c646e359f8746d909f2e848fccdc198a335a97e872c836d53aefdfe74f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "2379f31c7da7ba850504d7f2ab9de87800c107ea7d6c737d5be751d8783d35cb"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e6c6bf0a45375a44e1d3e4407828b6210ea278348e2134242335c25577de8c73"
     end
   end
   license "MIT"

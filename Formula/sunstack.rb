@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.12.0"
+  version "0.12.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "1cbf091f5534fab085f0e401c57adb38f76b3929681dbe8c3918343b688ff1d0"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "0b6cdf3ec88ad70343a4211e51d8334f3e7de5d175a6746c62f1ec12ef421205"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "33317c575de3a534d99c0cd88f2c2bb8adcdb25ca734ec3a6682b387cb213348"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "ca7b6695c0cb6831aee6cb3a9506d585963da0fdcce987e0dce8ea0238c5f12e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "5d7380f6241d84fa8cc4a7fb545ad4ca7f1b04a98a02ac1fe35bf9f3faabc02b"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "fc9eb71f923dd56c06e8964e1c372bb95497fca533b4654398681ef1bbbc565d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e3ec0f08897a213550e686f2710ffa7e1fbfed8eac2adb62f178be2bd45a6d6c"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.12.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "29b2abf4b933e7c338ed523ef5f751c1edf5f95d09ffedecb35bb798c00fb9fe"
     end
   end
   license "MIT"

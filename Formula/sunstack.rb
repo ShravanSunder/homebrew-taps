@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.10.0"
+  version "0.10.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "3c30b2273197deefc88eab7fe49c0b3daf172b37a0c93417f61a1a07265cb51a"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "a392b9be346c3e6c358fc9e221169064b9f308277e9292c51dfbbecda6489896"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "9909d1d2f1727fdd6dc491f5be35629c95ee1ce7636c726714b4287a13482c7a"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "5c5d10257e9b4078f8f278f7db36723bb863227023df62cc072183152fd992db"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "df8b91066a810ffee9f73b6fb9d4a00a96936f86e511d8ae4498bfafd7757bd2"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "96a8c2f5e01f8ea0c4b7c1d4c382ae7cd2eeb79f7bd4ea8ba87bed49f26eab94"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "842deaadfbae8e58bd40278175b793937559e20e7d47be99acf37a28fef3481c"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "02d62e1fbf546b6c81d621d88dbbc2ee5d98fc48bd5211ca116923c7d2d352d6"
     end
   end
   license "MIT"

@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.10.1"
+  version "0.11.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "a392b9be346c3e6c358fc9e221169064b9f308277e9292c51dfbbecda6489896"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "afb69cc00002895b1668d912fcf756c576e36c58d7b1dcbc9e79f43295bdcf0d"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "5c5d10257e9b4078f8f278f7db36723bb863227023df62cc072183152fd992db"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "bc31df35b3b033b8f081b29d03660e802c406dcb5165a256bb6e73bc18f562ae"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "96a8c2f5e01f8ea0c4b7c1d4c382ae7cd2eeb79f7bd4ea8ba87bed49f26eab94"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8586ae78ffe2395c66ad63d02595b8dced46195a35155ec901dee96fd534e264"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.10.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "02d62e1fbf546b6c81d621d88dbbc2ee5d98fc48bd5211ca116923c7d2d352d6"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.11.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "2379f31c7da7ba850504d7f2ab9de87800c107ea7d6c737d5be751d8783d35cb"
     end
   end
   license "MIT"

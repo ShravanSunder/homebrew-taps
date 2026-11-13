@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.14.0"
+  version "0.14.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "98fb9e7c7992bf91d7a7e5aed93f2921e98469bf91d8f75ace18489bed450550"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "203e4f54a36bedcf766ed2fae5476e0145b22da40ab1e6c525b5bdd172a5a48c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "8f6571b20c03bd65cf1eb1cf139d166ccefe51b927ee0338ec3695029f7ae20e"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "0bfe34c536396930ec6f5153f3310a2a11166515470a5a03eed4b03a79acc79f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "8c638273a594a32546c98386f54ce0ca0f156806eab139dc5e83f501fbb002ba"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "692dec0111a34a7dded58514870a36208689b89453f63efe18a11a9689576181"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d4bd11915f8db934f6875bfe2be60bf58ea57b68580eaffc0e7040783ee255ac"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "114cca37c72ee5024893a896da41916417da3c41c78d328a991774f99314cffa"
     end
   end
   license "MIT"

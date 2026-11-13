@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.16.0"
+  version "0.17.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "6b76044ee7c5718a72197ca2a62b7f2c5f07363d97baba83c68f22a5e675e026"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "59adff15fd69472e9f3f16c7bb593bc16046d308f056ac450d5ccfd1e3e64d2b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "fd0aaa1acf11272e38c5427bf13944f58ca4ac55ff79f43d6832c9b7f6d0cb03"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "5ad89ac87bd511cd501250296dbf960a798c8f80571357e38ddb294104900fa9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "ddb9a6f1ee8abee43b7678a13cf1c3aa5c11710c8b57730b69c1c67c353f3c34"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d5574d694ce225191dad9c3bbf294cce309def6d499d2db3c70ba8a9e2b9755f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "80a5a9e8c4cd078f342cf7dad8602ca8e88d7423730cef42271d3e0afb24e36b"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "645dfa02750e7102a8dffbc1fd8554c6335ebea91b0411b3b7323fcc34c2360c"
     end
   end
   license "MIT"

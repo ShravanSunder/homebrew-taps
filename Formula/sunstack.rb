@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.15.1"
+  version "0.16.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "656054b4358c712a1c4708c04f817da9c289b64da9803968bed1b78bd3beeac7"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "6b76044ee7c5718a72197ca2a62b7f2c5f07363d97baba83c68f22a5e675e026"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "851daed559cfb4e9d4ab180047102004b33c96c9440e1b14cb8a77ac32bfcc87"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "fd0aaa1acf11272e38c5427bf13944f58ca4ac55ff79f43d6832c9b7f6d0cb03"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "30a324e876ef5f0207961eb781c721a5e419c3b0489af75a55d20db6435f1355"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ddb9a6f1ee8abee43b7678a13cf1c3aa5c11710c8b57730b69c1c67c353f3c34"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d2072d0ed77c35ee98c5049395376cf39a8ec723539417dc885a8962d5540837"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.16.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "80a5a9e8c4cd078f342cf7dad8602ca8e88d7423730cef42271d3e0afb24e36b"
     end
   end
   license "MIT"

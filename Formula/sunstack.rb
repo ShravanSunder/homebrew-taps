@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.14.1"
+  version "0.15.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "203e4f54a36bedcf766ed2fae5476e0145b22da40ab1e6c525b5bdd172a5a48c"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "774d9eacaba791370f3009a8d6c598c3a3812797a6b4a48bcabe4da7e1fadd32"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "0bfe34c536396930ec6f5153f3310a2a11166515470a5a03eed4b03a79acc79f"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "528edf81fcd99e7f5b1d33ec9c2f8255d429c771d632c6974fab39c5196c7cdd"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "692dec0111a34a7dded58514870a36208689b89453f63efe18a11a9689576181"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "10d6e60639346237b865137887d391a181b4d0e40c73c6f69053ceecd42ed837"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.14.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "114cca37c72ee5024893a896da41916417da3c41c78d328a991774f99314cffa"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d593694a0c826d7ae581bcd45665edf38c6aa325b8e0b471a95dbffa55376ff3"
     end
   end
   license "MIT"

@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.15.0"
+  version "0.15.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "774d9eacaba791370f3009a8d6c598c3a3812797a6b4a48bcabe4da7e1fadd32"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "656054b4358c712a1c4708c04f817da9c289b64da9803968bed1b78bd3beeac7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "528edf81fcd99e7f5b1d33ec9c2f8255d429c771d632c6974fab39c5196c7cdd"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "851daed559cfb4e9d4ab180047102004b33c96c9440e1b14cb8a77ac32bfcc87"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "10d6e60639346237b865137887d391a181b4d0e40c73c6f69053ceecd42ed837"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "30a324e876ef5f0207961eb781c721a5e419c3b0489af75a55d20db6435f1355"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d593694a0c826d7ae581bcd45665edf38c6aa325b8e0b471a95dbffa55376ff3"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.15.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d2072d0ed77c35ee98c5049395376cf39a8ec723539417dc885a8962d5540837"
     end
   end
   license "MIT"

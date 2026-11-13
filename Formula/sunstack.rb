@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.17.0"
+  version "0.18.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "59adff15fd69472e9f3f16c7bb593bc16046d308f056ac450d5ccfd1e3e64d2b"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "516f6292f5b490303b211f9834dcf24d11d349194d66bece47e74a4f460da906"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "5ad89ac87bd511cd501250296dbf960a798c8f80571357e38ddb294104900fa9"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "c272f9c5b7ee2edeadf7f2730a164765603166ba44303a5ea1d6d3f20df6395f"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d5574d694ce225191dad9c3bbf294cce309def6d499d2db3c70ba8a9e2b9755f"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f2947899bb351e3fdb63a7a097fec7654945387340d013f386aad914af4f1428"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.17.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "645dfa02750e7102a8dffbc1fd8554c6335ebea91b0411b3b7323fcc34c2360c"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "9b8a96648c23506a6061d2a3b4feb6539c5f3ecb711ba040286b836502b05dee"
     end
   end
   license "MIT"

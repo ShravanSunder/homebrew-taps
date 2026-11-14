@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.21.1"
+  version "0.22.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "b783fa2f8b213dd47a1e711b107e1b67d643ff3fd93dfc96d99e68bd3bc81a80"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "15e26feafb1dfc6c61f1a0382800bd0ee416e2a69a758aefe080d0860a7caa50"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "4701341465d5bafec4af24cea88879436b9fdb608bf1bf5f666be449d8ba9ff2"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "226b56ed71e6329fdad702afbe01ef389f8162525e051eb31a67b5364edfb4fa"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "6f46c707e73c85c991af631d3e8cccf3ff86f53745e8c65cf7066e33ea4485ee"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "183e7301534fea39c959e087ba084a2c1eeff6e33e1c16439e1be6c009ed93f0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ee2074ef028e7f7eca65d2d0b981a689c2e952376f438499851527908a9a0e5b"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "8e808a9f04ce767ccf0a18cadc9a2625f721efb9b83c17c914a438b03381de99"
     end
   end
   license "MIT"

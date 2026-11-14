@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.18.0"
+  version "0.19.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "516f6292f5b490303b211f9834dcf24d11d349194d66bece47e74a4f460da906"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.19.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "af977c2a178bca90d7a00fa1443f66c82147b5b573776ad5cb8f66b4c1203cb8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "c272f9c5b7ee2edeadf7f2730a164765603166ba44303a5ea1d6d3f20df6395f"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.19.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "6878c7c884972fb3d47ce0f5cbfede87ac3bc1c624069adfb37dfdc88a54ba66"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f2947899bb351e3fdb63a7a097fec7654945387340d013f386aad914af4f1428"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.19.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "8f3318daf2af572a493862f1cd253e74db9570fe4233487ecfe288c888d3e512"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.18.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "9b8a96648c23506a6061d2a3b4feb6539c5f3ecb711ba040286b836502b05dee"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.19.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f98c1308004863f285a44a7209eee95aa47b7cf609641a00b48561888a7b3d23"
     end
   end
   license "MIT"

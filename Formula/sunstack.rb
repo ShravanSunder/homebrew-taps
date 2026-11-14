@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.20.1"
+  version "0.21.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.20.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "9e002b98caef002853df074b6d436307642997a6194e7fe8f94c2a81bf3c39ca"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "4c80d015549cba98aa08fb331e5b551ffd8b8477a0835f5958a3bdda10f6dbcb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.20.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "aca94bd5bcb4398b213bb549c2092e0d4032daa6253e2c6dba0834b72fd86733"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "721023a33566d0d69896e9f1e367fae9fdafda4bd8827b3dde5512d75e472636"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.20.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0bc1eb1f79438797d99ebf58396f3b4c77428ad6294af6cc846e9b3577390d9e"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "f9af5c352c91b7f5a63c205867cd3909f9e6af04f13ba596181afab339d66303"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.20.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7aee0be602a456f0be8051a118e4e2f14b123f7dfd2d3e054d2ccebb8b5660dd"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "c921d647e8dec82c761eb1e133d5ebbcf3f213e737706d3ab5768137f6b04e56"
     end
   end
   license "MIT"

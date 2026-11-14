@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.22.1"
+  version "0.22.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.1/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "be52db64e67b75f77423bed1a1ea881bb2464c232cd6380db25909ae162943b9"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.2/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "923720c3f072d662de104487ae92356ccac0d617dfeadd3a1bb39a673d68f3be"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.1/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "4763f37e77a0fee6b499b8ce43afb9794b8093357ced327525cc4bb57e175d28"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.2/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "891290401a7ea00ae54f47896fb4292a290029e153bf1ae0d80877caf51a659e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4d4aa022eaa327655f85679719b909e71cc03dfcfca575fbb68cda00e7b99671"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.2/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "bca1cc8b1c5456056382530feeb9914e825e13c022c84146d0de652f5c394408"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "5019d5aa025502de8a078e3f5df1798f3d9946b7284bc758e00cab45555ba847"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.22.2/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "43d9e8507e41e5164d673a934dd878a721c4a612057f78ab9295f178a903fb2d"
     end
   end
   license "MIT"

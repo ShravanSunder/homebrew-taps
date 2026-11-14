@@ -1,25 +1,25 @@
 class Sunstack < Formula
   desc "Lint repository documents and execute native Sunstack checks"
   homepage "https://github.com/ShravanSunder/sunstack-tools"
-  version "0.21.0"
+  version "0.21.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-aarch64-apple-darwin.tar.gz"
-      sha256 "4c80d015549cba98aa08fb331e5b551ffd8b8477a0835f5958a3bdda10f6dbcb"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-aarch64-apple-darwin.tar.gz"
+      sha256 "b783fa2f8b213dd47a1e711b107e1b67d643ff3fd93dfc96d99e68bd3bc81a80"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-x86_64-apple-darwin.tar.gz"
-      sha256 "721023a33566d0d69896e9f1e367fae9fdafda4bd8827b3dde5512d75e472636"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-x86_64-apple-darwin.tar.gz"
+      sha256 "4701341465d5bafec4af24cea88879436b9fdb608bf1bf5f666be449d8ba9ff2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f9af5c352c91b7f5a63c205867cd3909f9e6af04f13ba596181afab339d66303"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "6f46c707e73c85c991af631d3e8cccf3ff86f53745e8c65cf7066e33ea4485ee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.0/sunstack-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c921d647e8dec82c761eb1e133d5ebbcf3f213e737706d3ab5768137f6b04e56"
+      url "https://github.com/ShravanSunder/sunstack-tools/releases/download/v0.21.1/sunstack-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "ee2074ef028e7f7eca65d2d0b981a689c2e952376f438499851527908a9a0e5b"
     end
   end
   license "MIT"
